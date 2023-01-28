@@ -1,0 +1,14 @@
+{% extends 'layout.html'%}
+
+<h1>noticias</h1>
+
+{% for notice in posts %}
+
+<h2>{{posts.title}}</h2>
+<p>{{posts.description|striptags|truncatechars:100}}</p>
+
+<img src="{{posts.image.url}}" alt="{{posts.title}}">
+
+<a href="{% url 'blog:post_detail' post.id %}">{{notice.title}}</a>
+
+{% endfor%}
