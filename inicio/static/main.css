@@ -41,6 +41,16 @@
     background-color: #2A4574;
 }
 
+.cabezera .caja-1 .iconos2 a:hover {
+    background: rgb(255, 199, 57);
+    color: #000;
+}
+
+.cabezera .caja-1 .iconos a:hover {
+    background: rgb(255, 199, 57);
+    color: #000;
+}
+
 .correo {
     margin-top: 9px;
 }
@@ -154,7 +164,7 @@
 }
 
 .btn:hover {
-    background: #2A4574;
+    background: #27B5E8;
     color: white;
 }
 
@@ -305,6 +315,11 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 1rem;
+}
+
+button:hover {
+    background: #27B5E8;
+    color: white;;
 }
 
 /* a */
