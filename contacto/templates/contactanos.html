@@ -2,19 +2,9 @@
 
 {% block content %}
 
-<form action="{% url 'contact' %}" method="post">
-    {% csrf_token %}
-    <label for="name">Nombre:</label>
-    <input type="text" name="name" id="name" required>
-    <br>
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email" required>
-    <br>
-    <label for="message">Mensaje:</label>
-    <textarea name="message" id="message" required></textarea>
-    <br>
-    <input type="submit" value="Enviar">
-  </form>
-  
+<div class="final">
+    <h1>GRACIAS POR VISITARNOS</h1>
+    <p>Estamos para brindarle un servicio profesional y asesoramiento, escribanos o llámenos, estaremos respondiendo a la brevedad posible.</p>
+</div>
 
 {% endblock %}

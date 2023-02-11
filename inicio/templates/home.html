@@ -3,39 +3,68 @@
 
 {% block content %}
 
-<div class="banner">
-    <img src="{% static 'images/grafotec-image.jpg'%}" alt="banner grafotec" class="imagen-banner" width="100%"
-        height="600px">
-</div>
+{% include 'partials/banner.html' %}
 
 <!-- zona de noticias -->
-<div class="row my-4 text-center">
-    <h3>Nuestros servicios</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, laboriosam!</p>
-
-    {% for project in projects%}
-
-    <div class="col-md-3 p-3">
-        <div class="card card-project">
-            <img src="{{project.image.url}}" alt="{{project.title}}" class="card-img-top">
-            <div class="card-body">
-                <h2>{{project.title}}</h2>
-                <p>{{project.description}}</p>
-
-                {% if project.url %}
-                <a href="{{project.url}}}" class="btn btn-primary bt-sm" target="_blank">{{project.url}}}</a>
-                {% endif %}
-            </div>
-        </div>
-    </div>
-
-    {% endfor %}
-
-<div class="benefi">
-    <h3>Beneficios de trabajar con nosotros</h3>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut veniam quibusdam optio accusamus? Totam
-    reprehenderit voluptate sunt quibusdam quae blanditiis?</p>
+<div class="container my-5 info">
+    <h2 class="solutio1">SOLUCIONES INTEGRALES GRÁFICAS</h2>
+    <p class="solutio">GRAFOTEC es una empresa de servicios integrales de diseño e impresión, utilizamosuna amplia
+        gama de materiales y formatos para diferentes sectores, contamos con másde 20 años de experiencia en el
+        rubro de la producción gráﬁca y nuestro trabajo se basa en los 3 pilares de servicio</p>
 </div>
 
-    {% endblock %}
+<div class="contenedor-cards container my-4">
+    <div class="card" style="width: 25rem;">
+        <img src="./static/images/CALIDAD2XS.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Impresión de Calidad</h5>
+        </div>
+    </div>
+    <div class="card" style="width: 25rem;">
+        <img src="./static/images/seguridadXS.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Seguridad</h5>
+        </div>
+    </div>
+    <div class="card" style="width: 25rem;">
+        <img src="./static/images/PuntualidadXS.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Puntualidad</h5>
+        </div>
+    </div>
+</div>
+
+<div class="my-5 servicio">
+    <h2 class="descripcion1">NUESTROS SERVICIOS</h2>
+    <div class="service-et"><a href="https://facebook.com" target="blank"><img src="./static/images/publiXS.png"
+                alt="asdas" height="350px">
+            <p class="service-text">IMPRESIONES <br>PUBLICITARIAS</p>
+        </a>
+    </div>
+    <div class="service-et">
+        <a href="https://facebook.com" target="blank"><img src="./static/images/coopXS.png" alt="asdas"
+                height="350px">
+            <p class="service-text2">IMPRESIONES <br> CORPORATIVAS</p>
+        </a>
+    </div>
+    <div class="service-et">
+        <a href="https://facebook.com" target="blank"><img src="./static/images/gigaXS.png" alt="asdas"
+                height="350px">
+            <p class="service-text3">GIGANTOGRAFIAS</p>
+        </a>
+    </div>
+    <div class="service-et">
+        <a href="https://facebook.com" target="blank"><img src="./static/images/packXS.png" alt="asdas"
+                height="350px">
+            <p class="service-text4">PACKAGING <br> ECOLOGICO</p>
+        </a>
+    </div>
+</div>
+
+<div class="clientes-img my-4">
+    <h2 class="solution1">CLIENTES</h2>
+    <p class="solution">Algunos de nuestros clientes que confian en nosotros</p>
+    <img src="{% static 'images/clientesXS.png' %}" alt="cliente" width="100%" height="250px">
+</div>
+{% endblock %}
 </div>
