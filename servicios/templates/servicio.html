@@ -1,0 +1,33 @@
+{% extends 'layout.html'%}
+{% load static %}
+
+{% block content %}
+
+<div class="my-5 servicio">
+    <h2 class="descripcion1">NUESTROS SERVICIOS</h2>
+    <div class="service-et"><a href="{% url 'publicidad' %}"><img src="{% static 'images/publiXS.png'%}"
+                alt="asdas" height="350px">
+            <p class="service-text">IMPRESIONES <br>PUBLICITARIAS</p>
+        </a>
+    </div>
+    <div class="service-et">
+        <a href="{% url 'corporativa' %}"><img src="{% static 'images/coopXS.png'%}" alt="asdas"
+                height="350px">
+            <p class="service-text2">IMPRESIONES <br> CORPORATIVAS</p>
+        </a>
+    </div>
+    <div class="service-et">
+        <a href="{% url 'giganto' %}"><img src="{% static 'images/gigaXS.png'%}" alt="asdas"
+                height="315px">
+            <p class="service-text3">GIGANTOGRAFIAS</p>
+        </a>
+    </div>
+    <div class="service-et">
+        <a href="{% url 'packag' %}"><img src="{% static 'images/packXS.png'%}" alt="asdas"
+                height="350px">
+            <p class="service-text4">PACKAGING <br> ECOLOGICO</p>
+        </a>
+    </div>
+</div>
+
+{% endblock %}
