@@ -7,72 +7,72 @@
 
 <!-- zona de noticias -->
 <div class="container my-5 info">
-    <h2 class="solutio1">SOLUCIONES INTEGRALES GRÁFICAS</h2>
-    <p class="solutio">GRAFOTEC es una empresa de servicios integrales de diseño e impresión, utilizamosuna amplia
-        gama de materiales y formatos para diferentes sectores, contamos con másde 20 años de experiencia en el
-        rubro de la producción gráﬁca y nuestro trabajo se basa en los 3 pilares de servicio</p>
+    <h4 class="solutio1">SERVICIOS GRÁFICOS INTEGRALES</h4>
+    <p class="solutio">Somos GRAFOTEC, una empresa dedicada a brindar soluciones gráﬁcas de diseño e impresión,<br> utilizamos una amplia gama de materiales y formatos para distintas necesidades, contamos <br> con un staﬀ de más de 20 años de experiencia en la producción gráﬁca brindando <br> un servicio de calidad dentro de nuestros valores de honestidad y compromiso.</p>
 </div>
 
 <div class="contenedor-cards container my-4">
-    <div class="card" style="width: 25rem;">
-        <img src="./static/images/CALIDAD2XS.png" class="card-img-top" alt="...">
+    <div class="card" style="width: 190px;">
+        <img src="./static/images/calidadXS.png" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Impresión de Calidad</h5>
         </div>
     </div>
-    <div class="card" style="width: 25rem;">
-        <img src="./static/images/seguridadXS.png" class="card-img-top" alt="...">
+    <div class="card" style="width: 190px;">
+        <img src="./static/images/garantiaXS.png" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Seguridad</h5>
         </div>
     </div>
-    <div class="card" style="width: 25rem;">
-        <img src="./static/images/PuntualidadXS.png" class="card-img-top" alt="...">
+    <div class="card" style="width: 190px;">
+        <img src="./static/images/puntualidadXS.png" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Puntualidad</h5>
         </div>
     </div>
 </div>
 
-<div class="my-5 servicio">
-    <h2 class="descripcion1">NUESTROS SERVICIOS</h2>
+<div class="servicio">
+    <h4 class="descripcion1">NUESTROS SERVICIOS</h4>
+    <p class="descripcion2">Grafotec le ofrece servicios gráﬁcos personalizados para satisfacer las <br> necesidades especíﬁcas de cada cliente , nuestro equipo altamente <br> capacitado y experimentado está aquí para ayudarle.</p>
     <div class="service-et"><a href="{% url 'publicidad' %}"><img src="./static/images/publiXS.png"
-                alt="asdas" height="350px">
+                alt="asdas" height="320px">
             <p class="service-text">IMPRESIONES <br>PUBLICITARIAS</p>
         </a>
     </div>
     <div class="service-et">
         <a href="{% url 'corporativa' %}"><img src="./static/images/coopXS.png" alt="asdas"
-                height="350px">
+                height="320px">
             <p class="service-text2">IMPRESIONES <br> CORPORATIVAS</p>
         </a>
     </div>
     <div class="service-et">
         <a href="{% url 'giganto' %}"><img src="./static/images/gigaXS.png" alt="asdas"
-                height="315px">
+                height="285px">
             <p class="service-text3">GIGANTOGRAFIAS</p>
         </a>
     </div>
     <div class="service-et">
         <a href="{% url 'packag' %}"><img src="./static/images/packXS.png" alt="asdas"
-                height="350px">
+                height="320px">
             <p class="service-text4">PACKAGING <br> ECOLOGICO</p>
         </a>
     </div>
     <div class="service-et">
-        <a href="{% url 'packag' %}"><img src="./static/images/IMPRESIONDIGITALXS.png" alt="asdas"
-                height="315px">
-            <p class="service-text4">IMPRESIONES <br> DIGITALES</p>
+        <a href="#"><img src="./static/images/IMPRESIONDIGITALXS.png" alt="asdas"
+                height="285px">
+            <p class="service-text">IMPRESIONES <br> DIGITALES</p>
         </a>
     </div>
 </div>
 
 <div class="clientes-img my-4">
-    <h2 class="solution1">CLIENTES</h2>
-    <p class="solution">Algunos de nuestros clientes que confian en nosotros</p>
+    <h4 class="solution1">NUESTROS CLIENTES</h4>
     <img src="{% static 'images/clientesXS.png' %}" alt="cliente" width="100%" height="250px">
 </div>
 
-<script src="{% static 'main.js' %}"></script>
+{% include 'partials/form.html' %}
 
 {% endblock %}
+
+<script src="{% static 'main.js' %}"></script>

@@ -1,9 +1,17 @@
 {% load static %}
 
 <div class="banner">
-    <img src="{% static 'images/bannerXS.png' %}" alt="informacion" width="100%" height="750px">
+    <div class="banner-images-container">
+        <img src="{% static 'images/BannerN2XS.png' %}" alt="uahsdfksads" width="100%" height="750px">
+        <img src="{% static 'images/BannerN3XS.png' %}" alt="uahsdfksads"
+        width="100%" height="750px">
+        <img src="{% static 'images/BannerN4XS.png' %}" alt="uahsdfksads"
+        width="100%" height="750px">
+    </div>
     <div class="banner-text-container">
         <h1 class="banner-text">LO QUE DISEÑES <br> NOSOTROS LO IMPRIMIMOS</h1>
         <a href="{% url 'servicio' %}" class="btn">Ver servicios</a>
     </div>
 </div>
+
+<script src="{% static 'main.js' %}"></script>

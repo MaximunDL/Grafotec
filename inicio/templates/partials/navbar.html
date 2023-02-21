@@ -1,6 +1,9 @@
 {% load static %}
 
 <div class="contenedor">
+  <div class="menu-btn">
+    <li class="fas fa-bars"></li>
+  </div>
   <nav class="navbar">
     <a href="{% url 'home' %}" class="nav-link">INICIO</a>
     <a href="{% url 'about' %}" class="nav-link">NOSOTROS</a>
@@ -8,3 +11,5 @@
     <a href="{% url 'contact'%}" class="nav-link">CONTACTANOS</a>
   </nav>
 </div>
+
+<script src="{% static 'main.js' %}"></script>
