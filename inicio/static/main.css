@@ -709,5 +709,12 @@ button:hover {
 }
 
 @media (max-width: 500px) {
+    .banner {
+        grid-template-columns: 1fr;
+    }
 
+    .banner img {
+        height: 270px;
+        width: 100%;
+    }
 }

@@ -15,8 +15,6 @@ let bannerText = document.querySelector('.banner-text');
 let textArray = ['DEJA TODO EN <br> NUESTRAS MANOS', 'IMPRESIONES DE <br> ALTA CALIDAD', 'TRANSFORMAMOS TUS IDEAS <br> EN IMPRESIONES ÚNICAS'];
 
 setInterval(function () {
-  console.log('Index:', index);
-  console.log('Imagen actual:', images[index]);
   images[index].classList.remove('active');
   bannerText.innerHTML = textArray[index];
   index = (index + 1) % images.length;
