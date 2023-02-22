@@ -12,7 +12,7 @@ ScrollReveal().reveal('.pilares', { delay: 250 });
 let images = document.querySelectorAll('.banner-images-container img');
 let index = 0;
 let bannerText = document.querySelector('.banner-text');
-let textArray = ['DEJA TODO EN <br> NUESTRAS MANOS', 'IMPRESIONES DE <br> ALTA CALIDAD', 'TRANSFORMAMOS TUS IDEAS <br> EN IMPRESIONES ÚNICAS'];
+let textArray = ['DEJA TODO EN <br> NUESTRAS MANOS', 'IMPRESIONES DE <br> ALTA CALIDAD', 'TRANSFORMAMOS TUS <br>IDEAS EN <br>IMPRESIONES ÚNICAS'];
 
 setInterval(function () {
   images[index].classList.remove('active');
