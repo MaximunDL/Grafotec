@@ -379,6 +379,7 @@ button:hover {
 
 .service-et {
     margin-top: 17px;
+    margin-bottom: 70px;
     width: 100%;
 }
 
@@ -391,43 +392,18 @@ button:hover {
     border-radius: 30px;
 }
 
-.service-text {
+.service-text, .service-text2, .service-text3, .service-text4 {
     position: absolute;
-    top: 19%;
-    left: 8%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.service-text2 {
-    position: absolute;
-    top: 20%;
-    left: 91%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.service-text3 {
-    position: absolute;
-    top: 19%;
-    left: 9%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.service-text4 {
-    position: absolute;
-    top: 26%;
-    left: 91%;
+    top: 110%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 
 .service-et p {
     font-size: 20px;
-    color: white;
+    color: #2A4574;
     font-weight: 500;
-
 }
 
 /* footer */
@@ -684,6 +660,8 @@ button:hover {
 
 .cont1 {
     margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 40px;
 }
 
 
@@ -756,7 +734,6 @@ button:hover {
     .pie-pagina .grupo-1 .box:last-child .red-social a:not(:last-child) {
         margin-right: 20px;
     }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -797,8 +774,9 @@ button:hover {
         color: black;
     }
 
-    .caja-1 img {
-        max-width: 40%;
+    .caja-1 .head-img img {
+        max-width: 80%;
+        max-height: 100%;
     }
 
     .iconos a {
