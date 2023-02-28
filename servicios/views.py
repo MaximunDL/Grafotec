@@ -14,3 +14,6 @@ def publicidad (request):
 
 def packag (request):
     return render(request, 'packaging.html')
+
+def digital (request):
+    return render(request, 'digital.html')

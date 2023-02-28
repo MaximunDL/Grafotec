@@ -19,7 +19,7 @@ setInterval(function () {
   bannerText.innerHTML = textArray[index];
   index = (index + 1) % images.length;
   images[index].classList.add('active');
-}, 3000);
+}, 5000);
 
 
 const menuBtn = document.querySelector('.menu-btn');

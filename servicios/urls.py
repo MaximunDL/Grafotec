@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import servicio, corporativa, packag, publicidad, giganto
+from .views import servicio, corporativa, packag, publicidad, giganto, digital
 
 urlpatterns = [
     path("", servicio, name='servicio'),
@@ -7,4 +7,5 @@ urlpatterns = [
     path("giganto/", giganto, name='giganto'),
     path("packaging/", packag, name='packag'),
     path("publicidad/", publicidad, name='publicidad'),
+    path("digital/", digital, name='digital'),
 ]
