@@ -16,36 +16,6 @@
     position: relative;
 }
 
-.cabezera .caja-1 .iconos2 {
-    position: absolute;
-    top: 45%;
-    left: 40%;
-    display: flex;
-}
-
-.num {
-    margin-right: 30px;
-}
-
-.cabezera .caja-1 .iconos2 a {
-    text-decoration: none;
-    margin: 0 10px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    bottom: 15px;
-    right: 30px;
-    text-align: center;
-    color: #F4F4F4;
-    border-radius: 50%;
-    background-color: #2A4574;
-}
-
-.cabezera .caja-1 .iconos2 a:hover {
-    background: #00A7E4;
-    color: #fff;
-}
-
 .cabezera .caja-1 .iconos a:hover {
     background: #00A7E4;
     color: #fff;
@@ -57,7 +27,7 @@
 
 .cabezera .caja-1 .iconos {
     position: absolute;
-    top: 45px;
+    top: 65px;
     left: 80%;
     display: flex;
 }
@@ -102,7 +72,7 @@
 
 /* navbar */
 .navbar {
-    background: rgb(42, 69, 116);
+    background: #27395E;
     display: flex;
     justify-content: center;
     height: 50px;
@@ -111,8 +81,7 @@
 .navbar a {
     color: #fff;
     text-decoration: dashed;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 70px;
     font-size: 18px;
     font-weight: 500;
 }
@@ -152,6 +121,25 @@
     font-size: 45px;
 }
 
+.banner-subtext {
+    color: white;
+    font-size: 20px;
+}
+
+.smallimg {
+    position: relative;
+}
+
+.banner2-text {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+
+}
 
 /* nuevo banner */
 .banner-images-container {
@@ -197,13 +185,14 @@
 
 .btn {
     color: white;
-    background: #2A4574;
+    background: #27B5E8;
     margin-top: 20px;
     border: #000;
+    border-radius: 45px;
 }
 
 .btn:hover {
-    background: #27B5E8;
+    background: #2A4574;
     color: white;
 }
 
@@ -224,7 +213,13 @@
 .solutio1 {
     color: #2A4574;
     margin-top: 80px;
+    margin-bottom: 20px;
     text-align: center;
+    border-bottom: 3px solid #00B0F0;
+    display: inline-block;
+    text-align: center;
+    width: 15%;
+    padding-bottom: 10px;
 }
 
 .solutio {
@@ -254,11 +249,20 @@
 .card-body h5 {
     text-align: center;
     color: #2A4574;
+    border-bottom: 3px solid #00B0F0;
+    padding-bottom: 10px;
+}
+
+.card-subtitle {
+    margin-top: 20px;
+    color: rgb(96, 96, 98);
 }
 
 /*  */
 
-.info h3 {
+.info {
+    margin: 0 auto;
+    /*recordatoria hacerle un max-width de 600*/
     text-align: center;
 }
 
@@ -286,6 +290,94 @@
     text-align: center;
 }
 
+/* nuevo pendiente */
+.cards1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card1 {
+    width: 40%;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.card1 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card1 h4 {
+    position: relative;
+    display: inline-block;
+}
+
+.card1 h4::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #00B0F0;
+    margin-bottom: -5px;
+}
+
+.card1 p {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.text0 {
+    background: #E6E7E8;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.text1 {
+    background: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+/* div clientes */
+
+.clientes-img {
+    margin: 0 auto;
+    /*recordatoria hacerle un max-width de 600*/
+    text-align: center;
+}
+
+.clientes-img img {
+    width: 85%;
+    margin-bottom: 70px;
+}
+
+.clientes-img1 h4 {
+    position: relative;
+    display: flex;
+    left: 250px;
+}
+
+.clientes-img1 h4::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    width: 55%;
+    height: 3px;
+    background-color: #00B0F0;
+    margin-bottom: -10px;
+}
+
 /* formulario de correo */
 .formulario {
     text-align: center;
@@ -293,13 +385,11 @@
 }
 
 .contact-form {
-    background-image: url('./images/datosXS.png');
     max-width: 60%;
     max-height: 400px;
     display: inline-block;
     text-align: center;
     padding: 1rem;
-    border-radius: 10px;
     background-position: center;
     background-size: cover;
     margin-bottom: 20px;
@@ -328,7 +418,7 @@
 
 label {
     width: 100px;
-    color: white;
+    color: black;
     margin-left: 10px;
 }
 
@@ -337,8 +427,8 @@ label {
 }
 
 input {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid rgb(189, 191, 193);
+    background: rgb(230, 231, 232);
     height: 36px;
     width: 200px;
     text-align: left;
@@ -346,8 +436,8 @@ input {
 }
 
 textarea {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid rgb(189, 191, 193);
+    background: rgb(230, 231, 232);
     height: 100px;
     width: 100%;
     text-align: left;
@@ -357,17 +447,17 @@ textarea {
 
 
 button {
-    background-color: rgb(255, 199, 57);
-    color: black;
+    background-color: #27B5E8;
+    color: white;
     padding: 0.5rem 1rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 45px;
     cursor: pointer;
     margin-top: 1rem;
 }
 
 button:hover {
-    background: #27B5E8;
+    background: #2A4574;
     color: white;
     ;
 }
@@ -392,7 +482,10 @@ button:hover {
     border-radius: 30px;
 }
 
-.service-text, .service-text2, .service-text3, .service-text4 {
+.service-text,
+.service-text2,
+.service-text3,
+.service-text4 {
     position: absolute;
     top: 110%;
     left: 50%;
@@ -410,11 +503,10 @@ button:hover {
 
 .pie-pagina {
     width: 100%;
-    background-image: url('./images/benner2XS.png');
+    background: rgb(39, 57, 94);
     color: white;
     background-position: center;
     background-size: cover;
-
 }
 
 .pie-pagina .grupo-1 {
@@ -435,10 +527,6 @@ button:hover {
     align-items: center;
 }
 
-.pie-pagina .grupo-1 .box1 img {
-    margin-left: 27px;
-}
-
 .pie-pagina .grupo-1 .box h4 {
     margin-bottom: 15px;
     font-size: 20px;
@@ -447,6 +535,7 @@ button:hover {
 
 .pie-pagina .grupo-1 .box p {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .pie-pagina .grupo-1 .red-social a {
@@ -776,7 +865,7 @@ button:hover {
 
     .caja-1 .head-img img {
         max-width: 80%;
-        max-height: 100%;
+        max-height: 80%;
     }
 
     .iconos a {
@@ -822,7 +911,11 @@ button:hover {
     }
 
     .banner-text {
-        font-size: 3rem;
+        font-size: 30px;
+    }
+
+    .banner-subtext {
+        font-size: 18px;
     }
 
     .clientes-img img {
@@ -837,7 +930,7 @@ button:hover {
 
     .Contactenos-te img {
         max-width: 100%;
-        max-height: 400px;
+        max-height: 200px;
     }
 
     .Contactenos-te .banner-text {
@@ -853,6 +946,22 @@ button:hover {
 
     .bann-cont {
         display: none;
+    }
+
+    .clientes-img1 h4 {
+        font-size: 20px;
+        left: 20px;
+    }
+    
+    .clientes-img1 h4::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        width: 90%;
+        height: 3px;
+        background-color: #00B0F0;
+        margin-bottom: -10px;
     }
 }
 
@@ -881,7 +990,91 @@ button:hover {
         display: none;
     }
 
-    .num, .correo {
+    .num,
+    .correo {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .red-social {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .red-social a {
+        margin: 10px;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .cards1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    .banner-text {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .banner-subtext {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .smallimg {
+        height: 200px;
+    }
+
+    .banner2-text {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    .clientes-img1 h4 {
+        font-size: 19px;
+        left: 30px;
+    }
+    
+    .clientes-img1 h4::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 25px;
+        width: 55%;
+        height: 3px;
+        background-color: #00B0F0;
+        margin-bottom: -10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .banner {
+        height: 300px;
+    }
+
+    .banner-text {
+        font-size: 24px;
+    }
+
+    .banner-subtext {
+        font-size: 16px;
     }
 }
