@@ -213,7 +213,7 @@
 .solutio1 {
     color: #2A4574;
     margin-top: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     border-bottom: 3px solid #00B0F0;
     display: inline-block;
     max-width: 20%;
@@ -244,10 +244,12 @@
     border: none;
 }
 
-.card-body h5 {
+
+.card-title {
+    width: 100%;
+    border-bottom: 3px solid #00B0F0;
     text-align: center;
     color: #2A4574;
-    border-bottom: 3px solid #00B0F0;
     padding-bottom: 10px;
 }
 
@@ -355,7 +357,7 @@
 }
 
 .clientes-img img {
-    width: 85%;
+    width: 100%;
     margin-bottom: 70px;
 }
 
@@ -919,16 +921,11 @@ button:hover {
     }
 
     .banner-text {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .banner-subtext {
-        font-size: 18px;
-    }
-
-    .clientes-img img {
-        max-width: 100%;
-        max-height: 150px;
+        font-size: 16px;
     }
 
     .imar img {
@@ -1032,20 +1029,6 @@ button:hover {
         align-items: center;
     }
 
-    .banner {
-        height: 200px;
-    }
-
-    .banner-text {
-        font-size: 20px;
-        line-height: 1.2;
-    }
-
-    .banner-subtext {
-        font-size: 14px;
-        line-height: 1.2;
-    }
-
     .btn {
         font-size: 12px;
         padding: 8px 12px;
@@ -1080,11 +1063,34 @@ button:hover {
         height: 300px;
     }
 
+    .banner-text-container {
+        padding: 10px;
+    }
+
+    .clientes-img {
+        width: 100%;
+    }
+
+    .clientes-img img {
+        width: 100%;
+    }
+
+    .clientes-img1 img {
+        height: 180px;
+    }
+
+    .banner-text-container .btn {
+        margin-left: 90px;
+    } 
+
     .banner-text {
-        font-size: 24px;
+        font-size: 18px;
+        line-height: 24px;
+        margin-left: 100px;
     }
 
     .banner-subtext {
         font-size: 16px;
+        margin-left: 100px;
     }
 }
