@@ -327,7 +327,7 @@
 }
 
 .card1 p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.4;
     text-align: center;
 }
@@ -362,20 +362,18 @@
 }
 
 .clientes-img1 h4 {
-    position: relative;
-    display: flex;
-    left: 250px;
+    text-align: center;
 }
 
 .clientes-img1 h4::after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 25px;
-    width: 55%;
+    left: 725px;
+    width: 24%;
     height: 3px;
     background-color: #00B0F0;
-    margin-bottom: -10px;
+    margin-bottom: -75px;
 }
 
 /* formulario de correo */
@@ -948,20 +946,15 @@ button:hover {
         display: none;
     }
 
-    .clientes-img1 h4 {
-        font-size: 20px;
-        left: 20px;
-    }
-    
     .clientes-img1 h4::after {
         content: "";
         position: absolute;
         bottom: 0;
-        left: 20px;
-        width: 90%;
+        left: 190px;
+        width: 50%;
         height: 3px;
         background-color: #00B0F0;
-        margin-bottom: -10px;
+        margin-bottom: 300px;
     }
 }
 
@@ -1012,6 +1005,17 @@ button:hover {
         margin: 10px;
         font-size: 1.5rem;
     }
+
+    .clientes-img1 h4::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 485px;
+        width: 32%;
+        height: 3px;
+        background-color: #00B0F0;
+        margin-bottom: -135px;
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -1057,11 +1061,11 @@ button:hover {
         content: "";
         position: absolute;
         bottom: 0;
-        left: 25px;
-        width: 55%;
+        left: 20px;
+        width: 90%;
         height: 3px;
         background-color: #00B0F0;
-        margin-bottom: -10px;
+        margin-bottom: 170px;
     }
 }
 
