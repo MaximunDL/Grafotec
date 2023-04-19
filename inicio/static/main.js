@@ -26,7 +26,7 @@ let textArray = [
     heading: 'TUS IDEAS <br> EN IMPRESIONES <br> ÚNICAS',
     subheading: 'Impresiones personalizadas.',
     buttonLink: '{% url "about" %}',
-    buttonText: 'CONOCENOS',
+    buttonText: 'CÓNOCENOS',
   },
   {
     heading: 'DEJA TODO EN <br> NUESTRAS MANOS',
